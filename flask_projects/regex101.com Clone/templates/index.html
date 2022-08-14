@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>Regex101_Clone</title>
+</head>
+<body style="background-color:rgb(181, 232, 238);">
+    <h1 align="center">
+        My Regex101 Clone
+    </h1>
+ 
+    <form action="" method="post" style="margin: auto;width: 240px;">
+        <tr>
+            <td>
+                <h3> REGULAR EXPRESSION</h3>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <input type="text" name="reg_exp" autocomplete="off" style="font-size: 13pt;height: 30px;width: 300px;" placeholder="insert your regular expression here">
+            </td>
+        </tr>
+    
+        <tr>
+            <td>
+                <h3>TEST STRING</h3>
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <input type="text" name="test" autocomplete="off" style="font-size: 13pt; height: 150px ; width: 800px;" placeholder="   insert your test string here">
+        <br><br>
+
+                {% if count > 0 %}
+                <h3 style="display:inline ;">Result:</h3>&nbsp;&nbsp;{{result}} <br><br>
+                <h3 style="display:inline ;">Total matched string:</h3>&nbsp;&nbsp;&nbsp;{{count}} <br><br>
+                <!--{% for matches in match %}
+                <h3>String Matched:</h3>{{matches}}<br>
+                {% endfor %}-->
+                <h3 style="display:inline ;">Positions:</h3> <br>
+                {% for list in lists %}
+                {{list}}<br>
+                {% endfor %}
+                {% elif count==-1 %}
+                {{result}} <br><br>
+                {% else %}
+                <h3 style="display:inline ;">Result:</h3>&nbsp;&nbsp;&nbsp; Matches not found<br><br>
+                <h3 style="display:inline ;">Total matched string:</h3>&nbsp;&nbsp;&nbsp;{{count}} <br>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="SUBMIT" style="height: 50px; width:100px;">
+            </td>
+        </tr>
+    </form>
+    </table>
+</body>
+</html>
