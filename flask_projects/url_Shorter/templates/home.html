@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{%block content%}
+<h1>URL Shortener</h1>
+<hr/>
+<form action="#", method="post">
+    <h3>Enter an URL that starts with https:// </h3>
+    <input type="url" name="urlInput" id="url"
+    placeholder="https://example.com"
+    pattern="https://.*" size="50"
+    required>
+    <br>
+    <input type="submit" value="submit" class="btn btn-primary">
+</form>
+
+
+{% endblock %}
+
+

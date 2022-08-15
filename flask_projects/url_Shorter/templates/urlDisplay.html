@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %}Generated URL{% endblock %}
+
+{% block content %}
+    <h1>Your Generated URL</h1>
+    <hr/>
+    <h2>http://127.0.0.1:5000/{{generatedUrl}}</h2>
+    <input type= 'url' value = "127.0.0.1:5000/{{generatedUrl}}" id = "input" >
+                    
+    <button id = "btncopy" class="btn btn-primary">Copy Link</button>
+
+    <script type = "text/javascript">
+    const myInp = document.getElementById("input");
+    const btncopy = document.getElementById("btncopy");
+    
+    btncopy.onclick = function(){
+        myInp.select();
+        document.execCommand("Copy");
+    } ;
+
+</script>
+{% endblock %}
+
+
+

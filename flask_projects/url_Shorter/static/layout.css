@@ -1,0 +1,84 @@
+.mainBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #181818;
+    height: 100vh;
+    padding: 20px;
+    color: white;
+}
+
+.maintable{
+    padding-top: 10px;
+    overflow-y: overlay;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.h3{
+    padding-bottom: 20px;
+    margin-top: 25px;
+}
+
+.h2{
+    padding-bottom: 20px;
+}
+
+input{
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+bottom: .5em;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+li a:hover{
+    background-color: #a4c3c1;
+}
+
+.navigators{
+    margin: 0%;
+    padding-bottom: 0%;
+}
